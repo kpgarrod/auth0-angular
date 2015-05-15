@@ -1,3 +1,15 @@
+/**
+ * Add a module for use with commonjs(WebPack)
+ * Add to your webpack.config.js with:
+ * 
+ module.exports = {
+  resolve: {
+    alias: {
+      "auth0": 'auth0-angular/build/auth0-angular'
+    }
+  }
+ }
+ */ 
 (function () {
 
   angular.module('auth0', ['auth0.service', 'auth0.utils'])
