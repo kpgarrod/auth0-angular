@@ -1,4 +1,20 @@
 /**
+ * Add a module for use with commonjs(WebPack)
+ * Add to your webpack.config.js with:
+ * 
+ module.exports = {
+  resolve: {
+    alias: {
+      "auth0": 'auth0-angular/build/auth0-angular'
+    }
+  }
+ }
+ */ 
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports ===
+  exports) {
+  module.exports = 'auth0';
+}
+/**
  * Angular SDK to use with Auth0
  * @version v4.0.4 - 2015-04-28
  * @link https://auth0.com
